@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:weightSum="1">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:weightSum="1">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView" android:background="#a13c3c33"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="304dp" android:layout_weight="0.94" android:weightSum="1">
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView" android:src="@mipmap/morsecode"/>
+    </LinearLayout>
+    <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/gridLayout">
+        <Button android:layout_width="178dp" android:layout_height="126dp" android:text="DOT"
+                android:id="@+id/buttonLeft" android:layout_weight="0.39" android:layout_row="18"
+                android:layout_column="0"/>
+        <Button
+                android:layout_width="178dp"
+                android:layout_height="126dp"
+                android:text="DASH"
+                android:id="@+id/buttonRight" android:layout_weight="0.39" android:layout_row="18"
+                android:layout_column="1"/>
+    </GridLayout>
+</LinearLayout>
+
